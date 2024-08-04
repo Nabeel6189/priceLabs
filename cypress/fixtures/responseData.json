@@ -1,0 +1,30 @@
+{
+    "push_price_service":{
+    
+        "enableSyncPriceToggleResponseMessage": {
+            "message": "SUCCESS",
+            "response": {
+                "message": "Your prices are scheduled to be updated overnight. If you wish to sync your prices immediately, please use the <span style='background-color: #f0ad4e;'><strong>Sync Now</strong></span> button.",
+                "sync": true,
+                "ask_feedback": false,
+                "listing_move_to_new_algo": false,
+                "listing_name": null,
+                "cust": null
+            }
+        },
+        "disableSyncPriceToggleResponseMessage": {
+            "message": "SUCCESS",
+            "response":{
+                "message": "<div style='margin-bottom: 4px;'>We have stopped updating your prices.</div> <strong>Note:</strong><ul style='margin-top: 4px; padding-left: 24px;'><li>Our last pushed prices, minimum stay and check-in check-out (if any) will remain unchanged on your PMS/OTA. Please manage them directly on your PMS/OTA until you turn the sync on again.</li> <li style='margin-top: 8px;'>This listing will be included in your current billing cycle and removed from your next billing cycle. <a href='https://help.pricelabs.co/portal/en/kb/articles/billing' target='_blank'><span style='text-decoration: underline; color: #76A9FB; font-weight: 600;'>Review Billing Policy</span></a></li> </ul>",
+                "sync": false,
+                "ask_feedback": false,
+                "listing_move_to_new_algo": false,
+                "listing_name": "1103 WM - Sunset Watcher East & West",
+                "cust": null
+            }
+        },
+        "noListingError": {
+            "error": "Unable to locate this listing. Please contact support@pricelabs.co to resolve your issue."
+        }
+    }
+}
