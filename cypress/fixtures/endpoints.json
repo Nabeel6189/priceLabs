@@ -1,3 +1,4 @@
 {
-  "push_price_status": "/api/push_price_status"
+  "push_price_status": "/api/push_price_status",
+  "add_custom_pricing":"/api/add_custom_pricing"
 }

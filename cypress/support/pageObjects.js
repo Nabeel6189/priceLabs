@@ -31,6 +31,26 @@ class LoginPage {
     tableHeaderListName() {
         return cy.get('[qa-id="header-listingName"]');
     }
+
+    pricingSelection(listingName, qaId, index) {
+      cy.contains('tr', listingName).within(() => {
+        cy.get(`[class*="pricing-cell css-"] ${qaId}`).eq(index).click();
+      })
+    }
+
+    syncPriceToggle(listingNameforToggle){
+      return cy.get(`label[qa-id="mc-sync-toggle-${listingNameforToggle}"]`);
+    }
+
+    popup(){
+      return cy.get('[role="alert"]');
+    }
+
+    popupClose(){
+      this.popup().within(() => {
+        cy.get('[aria-label="Close"]').click();
+      }) 
+    }
 }
   
 

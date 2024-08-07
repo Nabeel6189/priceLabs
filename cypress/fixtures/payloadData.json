@@ -1,0 +1,37 @@
+{
+    "push_price_status":{
+        "push_status":true,
+        "listing_id":"SUNSETPROPS_OLSE___533",
+        "pms_name":"vrm"
+    },
+
+    "add_custom_pricing": {
+        "price": "22",
+        "reason": "test",
+        "basePrice": "60",
+        "priceType": "percent",
+        "pmsName": "vrm",
+        "minStay": "",
+        "minPrice": "43",
+        "minPriceType": "fixed",
+        "maxPrice": "66",
+        "maxPriceType": "fixed",
+        "listingId": "SUNSETPROPS_OLSE___323",
+        "currency": "USD",
+        "parentKey": 698195,
+        "page": "1",
+        "cacheBuster": 1723026951662,
+        "syncChildren": true,
+        "isParentListing": true,
+        "hasChildren": false,
+        "startDate": "Aug 12 2024",
+        "endDate": "Aug 13 2024",
+        "leadTimeExpiry": 3,
+        "checkInCheckOutEnabled": false,
+        "checkIn": "0000000",
+        "checkOut": "1111111",
+        "actualStartDate": "2024-08-12",
+        "actualEndDate": "2024-08-13",
+        "currentRowIndex": 2
+      }
+}

@@ -1,10 +1,10 @@
 {
-    "push_price_service":{
+    "push_price_status":{
     
         "enableSyncPriceToggleResponseMessage": {
             "message": "SUCCESS",
             "response": {
-                "message": "Your prices are scheduled to be updated overnight. If you wish to sync your prices immediately, please use the <span style='background-color: #f0ad4e;'><strong>Sync Now</strong></span> button.",
+                "message": "L'aggiornamento dei prezzi è previsto per la notte. Se  desideri sincronizzare immediatamente i prezzi, utilizza il pulsante <span style='background-color: #f0ad4e;'><strong>Sincronizza ora</strong></span> .",
                 "sync": true,
                 "ask_feedback": false,
                 "listing_move_to_new_algo": false,
@@ -15,7 +15,7 @@
         "disableSyncPriceToggleResponseMessage": {
             "message": "SUCCESS",
             "response":{
-                "message": "<div style='margin-bottom: 4px;'>We have stopped updating your prices.</div> <strong>Note:</strong><ul style='margin-top: 4px; padding-left: 24px;'><li>Our last pushed prices, minimum stay and check-in check-out (if any) will remain unchanged on your PMS/OTA. Please manage them directly on your PMS/OTA until you turn the sync on again.</li> <li style='margin-top: 8px;'>This listing will be included in your current billing cycle and removed from your next billing cycle. <a href='https://help.pricelabs.co/portal/en/kb/articles/billing' target='_blank'><span style='text-decoration: underline; color: #76A9FB; font-weight: 600;'>Review Billing Policy</span></a></li> </ul>",
+                "message": "Non invieremo più aggiornamenti sui prezzi a questo alloggio finché non riattiverai la sincronizzazione. <br> <br> <span style='background-color: #f0ad4e;'> <strong> Nota: </strong> </span> Questo alloggio è incluso nel ciclo di fatturazione corrente ma verrà rimosso dalle fatture a partire dal prossimo ciclo di fatturazione. <a href='https://help.pricelabs.co/portal/en/kb/articles/billing' target='_blank'> <span style='text-decoration: underline; color: #33CCFF;'> Rivedi le norme di fatturazione </span> </a>",
                 "sync": false,
                 "ask_feedback": false,
                 "listing_move_to_new_algo": false,
@@ -24,7 +24,9 @@
             }
         },
         "noListingError": {
-            "error": "Unable to locate this listing. Please contact support@pricelabs.co to resolve your issue."
+            "error": "Impossibile individuare questo alloggio. Contatta support@pricelabs.co per risolvere il problema."
         }
     }
+
+
 }
