@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-08-07T15:55:09.323Z",
+    "end": "2024-08-07T15:55:30.717Z",
+    "duration": 21394,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8fc91acd-e1df-4f85-a223-16b13ab95ec9",
+      "title": "",
+      "fullFile": "cypress\\e2e\\e2e\\multipleCalendarPage\\dateSpecificOverride.cy.js",
+      "file": "cypress\\e2e\\e2e\\multipleCalendarPage\\dateSpecificOverride.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "07aa88b7-f222-4d4c-a1e8-17d4455e4298",
+          "title": "Validate Multiple Calendar Page Date-Specific Override",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Validate Multiple Calendar Price Selection and DSO page",
+              "fullTitle": "Validate Multiple Calendar Page Date-Specific Override Validate Multiple Calendar Price Selection and DSO page",
+              "timedOut": null,
+              "duration": 21305,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1500, 1500);\nmultipleCalendar.tableHeaderListName().should('contain', 'Listing Name');\nmultipleCalendar.pricingSelection('[NB76] - Apartamento lindo', '.css-0', 0);",
+              "err": {},
+              "uuid": "280c8db6-030f-4357-ad5e-88dca60721b4",
+              "parentUUID": "07aa88b7-f222-4d4c-a1e8-17d4455e4298",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "280c8db6-030f-4357-ad5e-88dca60721b4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21305,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
