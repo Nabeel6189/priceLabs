@@ -54,7 +54,8 @@ describe('Cypress Test for Tricentis.com', () => {
                 cy.get('.content').should('contain.text', "The product has been added to your ");
                 cy.get('a[href="/cart"]').click();
             });
-
+            cy.get('.product-picture').should('be.visible');
+            cy.get('.product-name').should('contain.text', 'Simple Computer');
         });
 
 });
