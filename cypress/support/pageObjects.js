@@ -19,12 +19,6 @@ class LoginPage {
   class MultipleCalendar {
     visit(options = {}){
         cy.visit('/multicalendar', options)
-        Cypress.on('uncaught:exception', (err, runnable) => {
-            if (err.message.includes('Minified React error #419')) {
-              return false;
-            }
-            return true;
-        });
         cy.get('#mc-main').should('exist');
     }
 
@@ -34,7 +28,7 @@ class LoginPage {
 
     pricingSelection(listingName, qaId, index) {
       cy.contains('tr', listingName).within(() => {
-        cy.get(`[class*="pricing-cell css-"] ${qaId}`).eq(index).click();
+        cy.get('[data-testid="MoreVertIcon"]').click();
       })
     }
 

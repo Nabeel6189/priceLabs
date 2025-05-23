@@ -5,9 +5,9 @@ module.exports = defineConfig({
     testIsolation: false,
     baseUrl:"https://app.pricelabs.co",
     reporter: "cypress-mochawesome-reporter",
+    screenshotOnRunFailure: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
-      screenshotOnRunFailure:true 
       require('cypress-mochawesome-reporter/plugin')(on);
       on('after:run', async () => {
         try {

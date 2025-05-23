@@ -18,6 +18,12 @@ import './commands'
 import 'cypress-mochawesome-reporter/register'
 require('cypress-xpath');
 
+Cypress.on('uncaught:exception', (err, runnable) => {
+    if (err.message.includes('Minified React error #419')) {
+      return false;
+    }
+    return true;
+});
 
 
 // Alternatively you can use CommonJS syntax:
