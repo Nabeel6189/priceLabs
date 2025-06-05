@@ -25,6 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 const { LoginPage } = require('../support/pageObjects');
+import '@4tw/cypress-drag-drop';
 
 const loginPage = new LoginPage()
 
@@ -68,4 +69,8 @@ Cypress.Commands.add('makeRequest', (method, endpointKey, options ={}) => {
                 body: options.body ? options.body : undefined
             });
     });
+
+    Cypress.Commands.add('iframeBody', () => {    
+        return cy.get('iframe[data-cy="test-iframe"]').should('exist').its('0.contentDocument.body').should('not.be.empty').then(cy.wrap);
+    })
 });
